@@ -4,19 +4,19 @@ import { StyledContainer } from './sample.style';
 // import { ThemeProvider } from 'styled-components';
 // import { lightTheme } from '../characters_table/theme';
 // import logo from './logo.png';
-import { getCharacters } from '../../api/rick_and_morty';
+// import { getCharacters } from '../../api/rick_and_morty';
 // import ScTable from '../characters_table/Table';
 // import LgWidget from '../LgWidget_table/LgWidget';
 import Card from '../cards/Card';
 const Sample = () => {
-	const [characters, setCharacters] = useState([]);
+	/* const [characters, setCharacters] = useState([]);
 
 	useEffect(() => {
 		getCharacters().then(data => {
 			setCharacters(data.results);
 		});
 	}, []);
-	console.log(characters, 'characters');
+	console.log(characters, 'characters'); */
 
 	return (
 		<StyledContainer>
@@ -43,9 +43,11 @@ const Sample = () => {
 			</ThemeProvider> */}
 
 			{/* <LgWidget characters={characters} /> */}
-			<div className="center">
+
+			{/* <div className="center">
 				<Card characters={characters} />
-			</div>
+			</div> */}
+
 		</StyledContainer>
 	);
 };

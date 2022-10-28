@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-image: url("./R&M.jpeg");
+    color: white;
+    padding: 4.5rem 0px;
+    width: 100%;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #ff3131;
+  }

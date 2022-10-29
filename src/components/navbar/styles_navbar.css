@@ -1,0 +1,9 @@
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+}
+
+.navbarLogo-img {
+	width: 60px;
+}

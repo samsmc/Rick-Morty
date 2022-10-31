@@ -1,29 +1,9 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
 import './styles_select_filter.css';
-import { getCharactersByStatus } from '../../../api/rick_and_morty';
-import Card from '../../cards/Card';
+import List from '../../cards/List';
 
-export default function SelectFilter() {
-	const [characters, setCharacters] = useState([]);
-	const [type, setType] = useState('');
-
-
-	useEffect(() => {
-		getCharactersByStatus(type).then(data => {
-			setCharacters(data.results);
-		});
-	}, [type]);
-	console.log(characters, 'charactersByType');
-
-	/* const handleCharacters = (characters, allCharacters) => {
-		if(!characters){
-			setCharacters(allCharacters);
-		}
-		return characters;
-	} */
-
-	// characters ? characters.map : allcharacters.map
-	console.log(type, 'type')
+export default function SelectFilter({ characters, type, setType }) {
+	// console.log(characters, 'selectFilter characters')
 
 	return (
 		<>
@@ -39,9 +19,7 @@ export default function SelectFilter() {
 					<option value="status=dead">Dead</option>
 				</select>
 			</div>
-			<Card characters={characters} />
+			<List characters={characters} />
 		</>
 	);
 }
-
-

@@ -3,6 +3,9 @@
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    /* position: fixed; */
+    bottom: 0;
+    height: 10px;  
     background-image: url("./R&M.jpeg");
     color: white;
     padding: 4.5rem 0px;

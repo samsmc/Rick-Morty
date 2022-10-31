@@ -1,17 +1,12 @@
-import React from 'react';
-import SelectFilter from '../components/filters/select_filter/SelectFilter';
-import Footer from '../components/footer/Footer';
+import SelectFilter from '../components/filters/select_filter/SelectFilter'; 
 import Header from '../components/header/Header';
-import Navbar from '../components/navbar/Navbar';
 import './styles_homepage.css';
 
-const Homepage = () => {
+const Homepage = ({characters, type, setType}) => {
 	return (
 		<>
-			<Navbar />
 			<Header />
-			<SelectFilter />
-			<Footer />
+			<SelectFilter characters={characters} type={type} setType={setType} />
 		</>
 	);
 };

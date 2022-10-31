@@ -1,10 +1,9 @@
-import React from 'react';
-import './styles_card.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilm } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import "./styles_card.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilm } from "@fortawesome/free-solid-svg-icons";
 
 export default function Card({ character }) {
-	/* console.log(character, 'cARD') */
 	return (
 		<div className="card" key={character.id}>
 			<div className="additional">

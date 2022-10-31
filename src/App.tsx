@@ -16,7 +16,7 @@ const App = () => {
 			setCharacters(data.results);
 		});
 	}, [type]);
-	console.log(characters, 'charactersByType');
+	console.log(type, 'charactersByTypeAPP');
 	return (
 		<>
 			<BrowserRouter>

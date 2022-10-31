@@ -3,8 +3,6 @@ import './styles_select_filter.css';
 import List from '../../cards/List';
 
 export default function SelectFilter({ characters, type, setType }) {
-	// console.log(characters, 'selectFilter characters')
-
 	return (
 		<>
 			<div className="select-dropdown">

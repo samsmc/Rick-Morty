@@ -1,10 +1,7 @@
 import React from 'react';
-import CardContainer from '../cards/CardContainer';
 import './styles_search.css';
 
-export default function Search({ characters, type, setType }) {
-	console.log(type, 'type');
-	const searchValue = 'name=';
+export default function Search({ setSearchTerm }) {
 	return (
 		<div className="searchpage">
 			<div className="search">
@@ -12,13 +9,12 @@ export default function Search({ characters, type, setType }) {
 					<input
 						placeholder="Search..."
 						onChange={e => {
-							setType(searchValue + e.target.value);
+							setSearchTerm(e.target.value);
 						}}
 					></input>
 				</div>
 				<div style={{ color: 'white' }}>results will be displayed</div>
 			</div>
-			{type.length > 5 ? <CardContainer characters={characters} /> : null}
 		</div>
 	);
 }

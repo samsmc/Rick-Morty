@@ -1,5 +1,5 @@
 import React from 'react';
-import List from '../cards/List';
+import CardContainer from '../cards/CardContainer';
 import './styles_search.css';
 
 export default function Search({ characters, type, setType }) {
@@ -18,7 +18,7 @@ export default function Search({ characters, type, setType }) {
 				</div>
 				<div style={{ color: 'white' }}>results will be displayed</div>
 			</div>
-			{type.length > 5 ? <List characters={characters} /> : null}
+			{type.length > 5 ? <CardContainer characters={characters} /> : null}
 		</div>
 	);
 }

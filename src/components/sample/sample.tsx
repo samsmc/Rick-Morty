@@ -7,7 +7,7 @@ import { StyledContainer } from './sample.style';
 // import { getCharacters } from '../../api/rick_and_morty';
 // import ScTable from '../characters_table/Table';
 // import LgWidget from '../LgWidget_table/LgWidget';
-import Card from '../cards/List';
+import Card from '../cards/CardContainer';
 const Sample = () => {
 	/* const [characters, setCharacters] = useState([]);
 

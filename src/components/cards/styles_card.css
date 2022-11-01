@@ -1,13 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css?family=Abel');
-
-html,
-body {
-	background: #fceeb5;
-	font-family: Abel, Arial, Verdana, sans-serif;
-}*/
-
-
-
 .card {
 	width: 450px;
 	height: 250px;
@@ -18,11 +8,12 @@ body {
 	overflow: hidden;
 	position: relative;
 	margin: 1.5rem;
-}
-
-.card h1 {
 	text-align: center;
 }
+
+/* .card h1 {
+	text-align: center;
+} */
 
 .card .additional {
 	position: absolute;
@@ -160,10 +151,12 @@ body {
 }
 
 .card .general {
+	display: flex;
+	flex-direction: column;
 	width: 300px;
 	height: 100%;
 	position: absolute;
-	top: 0;
+	/* top: 0; */
 	right: 0;
 	z-index: 1;
 	box-sizing: border-box;
@@ -171,12 +164,12 @@ body {
 	padding-top: 0;
 }
 
-.card .general .more {
+/* .card .general .more {
 	position: absolute;
 	bottom: 1rem;
 	right: 1rem;
 	font-size: 0.9em;
-}
+} */
 
 .imgRound {
 	text-align: center;
@@ -188,3 +181,40 @@ body {
 	object-fit: cover;
 	margin: 20% 0 20% 0;
 }
+
+/* @media (max-width: 320px) {
+	.card .general {
+		width: 120px;
+	}
+} */
+
+/* @media (max-width: 480px) {
+	.card .general {
+		width: 50%;
+	}
+	.card h1 {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 1rem;
+	}
+} */
+
+/* @media (min-width: 992px) {
+	html {
+		font-size: 1.1rem;
+	}
+}
+ */
+/* @media (min-width: 1200px) {
+	html {
+		font-size: 1.1rem;
+	}
+	.food-fact > p {
+		padding-top: 12%;
+		padding-bottom: 5%;
+	}
+} */

@@ -34,7 +34,7 @@ export default function Card({ character }) {
 			<div className="general">
 				<h1>{character.name}</h1>
 				<p>{character.status}</p>
-				<span className="more">&gt;</span>
+				{/* <span className="more">&gt;</span> */}
 			</div>
 		</div>
 	);

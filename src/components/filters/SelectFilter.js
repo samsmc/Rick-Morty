@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles_select_filter.css';
-import List from '../../cards/List';
+import CardContainer from '../cards/CardContainer';
 
 export default function SelectFilter({ characters, type, setType }) {
 	return (
@@ -11,13 +11,13 @@ export default function SelectFilter({ characters, type, setType }) {
 					<option defaultValue="0">Filter</option>
 					<option value="species=human">Human</option>
 					<option value="species=alien">Alien</option>
-					<option value="gender=woman">Female</option>
-					<option value="gender=men">Male</option>
+					<option value="gender=female">Female</option>
+					<option value="gender=male">Male</option>
 					<option value="status=alive">Alive</option>
 					<option value="status=dead">Dead</option>
 				</select>
 			</div>
-			<List characters={characters} />
+			<CardContainer characters={characters} />
 		</>
 	);
 }

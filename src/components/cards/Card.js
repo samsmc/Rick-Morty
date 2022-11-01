@@ -1,11 +1,11 @@
-import React from "react";
-import "./styles_card.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilm } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import './styles_card.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilm } from '@fortawesome/free-solid-svg-icons';
 
 export default function Card({ character }) {
 	return (
-		<div className="card" key={character.id}>
+		<div className={character.status === 'Alive' ? 'card green' : 'card'} key={character.id}>
 			<div className="additional">
 				<div className="user-card">
 					<div className="level center">{character.species}</div>
@@ -34,7 +34,6 @@ export default function Card({ character }) {
 			<div className="general">
 				<h1>{character.name}</h1>
 				<p>{character.status}</p>
-				{/* <span className="more">&gt;</span> */}
 			</div>
 		</div>
 	);

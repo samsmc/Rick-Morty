@@ -9,7 +9,7 @@ interface PaginationType {
 }
 
 export default function Pagination({ info, fetchNextPage, fetchPreviousPage }: PaginationType) {
-	console.log(info);
+	/* console.log(info); */
 	return (
 		<div>
 			<ul className="pagination">

@@ -7,13 +7,12 @@ export default function Search({ setSearchTerm }) {
 			<div className="search">
 				<div>
 					<input
-						placeholder="Search..."
+						placeholder="Search by name..."
 						onChange={e => {
 							setSearchTerm(e.target.value);
 						}}
 					></input>
 				</div>
-				<div style={{ color: 'white' }}>results will be displayed</div>
 			</div>
 		</div>
 	);

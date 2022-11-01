@@ -1,10 +1,12 @@
 import React from 'react';
 import './styles_select_filter.css';
 import CardContainer from '../cards/CardContainer';
+import Search from '../search/Search';
 
-export default function SelectFilter({ characters, type, setType }) {
+export default function SelectFilter({ characters, type, setType, setSearchTerm }) {
 	return (
 		<>
+			<Search setSearchTerm={setSearchTerm} />
 			<div className="select-dropdown">
 				<h1 className="header-title">Rick and Morty Characters</h1>
 				<select value={type} onChange={e => setType(e.target.value)}>

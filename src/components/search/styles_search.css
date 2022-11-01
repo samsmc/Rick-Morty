@@ -1,4 +1,4 @@
-.search {
+/* .search {
 	display: flex;
 	flex-direction: column;
 	margin: 30px;
@@ -8,7 +8,7 @@
     background-image: url("../../components/footer/R&M.jpeg");
     padding: 8rem 0px;
     width: 100%;
- }
+ } */
 
 input {
 	appearance: none;

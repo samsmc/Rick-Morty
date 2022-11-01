@@ -5,15 +5,16 @@ import './styles_pagination.css';
 interface PaginationType {
 	info: Info | undefined;
 	fetchNextPage: () => void;
+	fetchPreviousPage: () => void;
 }
 
-export default function Pagination({ info, fetchNextPage }: PaginationType) {
+export default function Pagination({ info, fetchNextPage, fetchPreviousPage }: PaginationType) {
 	console.log(info);
 	return (
 		<div>
 			<ul className="pagination">
 				<li className="page-item">
-					<button disabled={!info?.prev} className="" /* onClick={handlePreviousPage} */>
+					<button disabled={!info?.prev} className="" onClick={fetchPreviousPage}>
 						Previous
 					</button>
 				</li>

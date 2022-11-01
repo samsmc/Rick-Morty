@@ -1,9 +1,3 @@
-/* .search {
-	display: flex;
-	flex-direction: column;
-	margin: 30px;
-}*/
-
 .searchbar {
     background-image: url("../../components/footer/R&M.jpeg");
  } 
@@ -11,7 +5,6 @@
 .input-search {
 	appearance: none;
 	border: 0;
-	/* outline: 0; */
 	font: inherit;
 	height: 3em;
 	padding: 0 4em 0 1em;
@@ -37,7 +30,3 @@
 	display: none;
 }
 
-svg {
-	fill: white;
-	font-size: 2em;
-}

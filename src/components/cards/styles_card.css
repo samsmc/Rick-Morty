@@ -11,10 +11,6 @@
 	text-align: center;
 }
 
-/* .card h1 {
-	text-align: center;
-} */
-
 .card .additional {
 	position: absolute;
 	width: 150px;
@@ -58,8 +54,8 @@
 	justify-content: space-evenly;
 }
 
-.card .additional .user-card .level,
-.card .additional .user-card .points {
+.card .additional .user-card .species,
+.card .additional .user-card .gender {
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 0.75em;
@@ -67,14 +63,13 @@
 	background: rgba(0, 0, 0, 0.15);
 	padding: 0.125rem 0.75rem;
 	border-radius: 100px;
-	white-space: nowrap;
 }
 
-.card .additional .user-card .points {
+.card .additional .user-card .gender {
 	top: 85%;
 }
 
-.card .additional .more-info {
+.more-info {
 	width: 300px;
 	float: left;
 	position: absolute;
@@ -82,7 +77,7 @@
 	height: 100%;
 }
 
-.card .additional .more-info h1 {
+.more-info h1 {
 	color: #fff;
 	margin-bottom: 0;
 }
@@ -91,26 +86,34 @@
 	color: #224c36;
 }
 
-.card .additional .coords {
-	margin: 0 1rem;
+.coords {
+	margin: 3%;
 	color: #fff;
 	font-size: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
+	align-content: space-around;
+}
+
+.location {
+	font-weight: bold;
 }
 
 .card.green .additional .coords {
 	color: #325c46;
 }
 
-.card .additional .coords span + span {
-	float: right;
+.coords span {
+	margin: 0.2%;
 }
 
-.card .additional .stats {
+.stats {
 	font-size: 2rem;
 	display: flex;
 	position: absolute;
 	bottom: 1rem;
-	left: 1rem;
 	right: 1rem;
 	top: auto;
 	color: #fff;
@@ -120,56 +123,35 @@
 	color: #325c46;
 }
 
-.card .additional .stats > div {
+.stats > div {
 	flex: 1;
 	text-align: center;
 }
 
-.card .additional .stats i {
-	display: block;
-}
-
-.card .additional .stats div.title {
+.title {
 	font-size: 0.75rem;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-.card .additional .stats div.value {
-	font-size: 1.5rem;
+.episode {
+	font-size: 1rem;
 	font-weight: bold;
-	line-height: 1.5rem;
+	line-height: 0.5rem;
 }
 
-.fa {
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.card .general {
+.general {
 	display: flex;
 	flex-direction: column;
-	width: 300px;
+	width: 67%;
 	height: 100%;
 	position: absolute;
-	/* top: 0; */
 	right: 0;
 	z-index: 1;
 	box-sizing: border-box;
 	padding: 1rem;
 	padding-top: 0;
 }
-
-/* .card .general .more {
-	position: absolute;
-	bottom: 1rem;
-	right: 1rem;
-	font-size: 0.9em;
-} */
 
 .imgRound {
 	text-align: center;
@@ -182,39 +164,33 @@
 	margin: 20% 0 20% 0;
 }
 
-/* @media (max-width: 320px) {
+@media (max-width: 400px) {
 	.card .general {
-		width: 120px;
-	}
-} */
-
-/* @media (max-width: 480px) {
-	.card .general {
-		width: 50%;
+		max-width: 45%;
 	}
 	.card h1 {
-		font-size: 20px;
+		font-size: 15px;
+	}
+	.more-info {
+		max-width: 45%;
+	}
+	.more-info h1 {
+		font-size: 15px;
+	}
+	.coords {
+		font-size: 12px;
+		margin-top: 20%;
+	}
+	.additional {
+		width: 0;
+	}
+	.card .additional {
+		width: 130px;
+	}
+	.card .additional .user-card {
+		width: 130px;
+	}
+	.more-info {
+		left: 145px;
 	}
 }
-
-@media (max-width: 768px) {
-	html {
-		font-size: 1rem;
-	}
-} */
-
-/* @media (min-width: 992px) {
-	html {
-		font-size: 1.1rem;
-	}
-}
- */
-/* @media (min-width: 1200px) {
-	html {
-		font-size: 1.1rem;
-	}
-	.food-fact > p {
-		padding-top: 12%;
-		padding-bottom: 5%;
-	}
-} */

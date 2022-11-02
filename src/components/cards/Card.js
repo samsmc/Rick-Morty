@@ -8,25 +8,25 @@ export default function Card({ character }) {
 		<div className={character.status === 'Alive' ? 'card green' : 'card'} key={character.id}>
 			<div className="additional">
 				<div className="user-card">
-					<div className="level center">{character.species}</div>
+					<div className="species center">{character.species}</div>
 					<div className="imgRound">
 						<img src={character.image} alt={character.name} />
 					</div>
-					<div className="points center">{character.gender}</div>
+					<div className="gender center">{character.gender}</div>
 				</div>
 				<div className="more-info">
 					<h1>{character.name}</h1>
 					<div className="coords">
-						<span>Last known location: {character.location.name}</span>
-					</div>
-					<div className="coords">
-						<span>First seen in: {character.origin.name}</span>
+						<span>Last known location:</span>
+						<span className="location">{character.location.name}</span>
+						<span>First seen in: </span>
+						<span className="location">{character.origin.name}</span>
 					</div>
 					<div className="stats">
 						<div>
 							<div className="title">Episode</div>
-							<FontAwesomeIcon icon={faFilm} />
-							<div className="value">{character.episode.length}</div>
+							<FontAwesomeIcon icon={faFilm} size="sm" />
+							<div className="episode">{character.episode.length}</div>
 						</div>
 					</div>
 				</div>

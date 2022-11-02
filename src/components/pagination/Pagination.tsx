@@ -11,20 +11,13 @@ interface PaginationType {
 export default function Pagination({ info, fetchNextPage, fetchPreviousPage }: PaginationType) {
 	/* console.log(info); */
 	return (
-		<div>
-			<ul className="pagination">
-				<li className="page-item">
-					<button disabled={!info?.prev} className="" onClick={fetchPreviousPage}>
-						Previous
-					</button>
-				</li>
-
-				<li className="">
-					<button disabled={!info?.next} className="" onClick={fetchNextPage}>
-						Next
-					</button>
-				</li>
-			</ul>
+		<div className="pagination">
+			<button disabled={!info?.prev} className="btn-page" onClick={fetchPreviousPage}>
+				Previous
+			</button>
+			<button disabled={!info?.next} className="btn-page" onClick={fetchNextPage}>
+				Next
+			</button>
 		</div>
 	);
 }

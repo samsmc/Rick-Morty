@@ -1,4 +1,4 @@
-![rick-and-morty-31013](/Users/samanthamartins/Downloads/rick-and-morty-31013.png)
+![rick-and-morty-31013](public/rick-and-morty-31013.png)
 
 ## Hi 👋,
 

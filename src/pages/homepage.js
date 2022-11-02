@@ -1,13 +1,21 @@
 import React from 'react';
-import SelectFilter from '../components/filters/SelectFilter';
+import Filters from '../components/filters/Filters';
 import Header from '../components/header/Header';
 import './styles_homepage.css';
 
-const Homepage = ({ characters, type, setType, setSearchTerm }) => {
+const Homepage = ({ characters, type, setType, setSearchTerm, info, fetchNextPage, fetchPreviousPage }) => {
 	return (
 		<>
 			<Header />
-			<SelectFilter characters={characters} type={type} setType={setType} setSearchTerm={setSearchTerm} />
+			<Filters
+				characters={characters}
+				type={type}
+				setType={setType}
+				setSearchTerm={setSearchTerm}
+				info={info}
+				fetchNextPage={fetchNextPage}
+				fetchPreviousPage={fetchPreviousPage}
+			/>
 		</>
 	);
 };

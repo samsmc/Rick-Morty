@@ -5,35 +5,6 @@
 	margin: 20px 0 30px 0;
 }
 
-.fill {
-    background-color: rgba(239, 239, 239, 0.3);
-	font-size: 15px;
-	font-weight: 200;
-	letter-spacing: 1px;
-	padding: 13px 20px 13px;
-	margin: 2px;
-	outline: 0;
-	border: 1px solid rgb(25, 172, 37);
-	cursor: pointer;
-	position: relative;
-	color: aqua;
-	background-color: ;
-}
-
-.fill:hover{
-	background-color: #56e895;
-	color: #000000;
-}
-
-.fill:disabled {
-    background-color: #dadada;
-	box-shadow: none;
-	color: #8f8f8f;
-	cursor: default;
-	border: #8f8f8f;
-}
-
-/* CSS */
 .btn-page {
 	background-color: rgba(239, 239, 239, 0.3);
 	border-radius: 2px;
@@ -42,7 +13,7 @@
 	color: aqua;
 	cursor: pointer;
 	display: inline-block;
-	font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+	font-family: -apple-system, system-ui, 'Segoe UI', 'Liberation Sans', sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 1.15385;
@@ -63,10 +34,6 @@
 	background-color: #56e895;
 	color: #000000;
 }
-
-/* .btn-page:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
-} */
 
 .btn-page:disabled {
 	background-color: #dadada;

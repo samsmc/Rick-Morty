@@ -104,6 +104,9 @@ const App = () => {
 								type={type}
 								setType={setType}
 								setSearchTerm={setSearchTerm}
+								info={info}
+								fetchNextPage={fetchNextPage}
+								fetchPreviousPage={fetchPreviousPage}
 							/>
 						}
 					/>

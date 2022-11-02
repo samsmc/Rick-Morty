@@ -9,7 +9,6 @@ interface PaginationType {
 }
 
 export default function Pagination({ info, fetchNextPage, fetchPreviousPage }: PaginationType) {
-	/* console.log(info); */
 	return (
 		<div className="pagination">
 			<button disabled={!info?.prev} className="btn-page" onClick={fetchPreviousPage}>

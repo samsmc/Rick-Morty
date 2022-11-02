@@ -97,7 +97,7 @@ const App = () => {
 				<Navbar />
 				<Routes>
 					<Route
-						path="/"
+						path="/Rick-Morty"
 						element={
 							<Homepage
 								characters={characters}

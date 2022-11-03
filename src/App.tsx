@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ErrorPage from './components/error_page/ErrorPage';
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import Homepage from './pages/homepage';
@@ -95,28 +93,18 @@ const App = () => {
 
 	return (
 		<>
-			<BrowserRouter>
-				<Navbar />
-				<Routes>
-					<Route
-						path="/Rick-Morty/"
-						element={
-							<Homepage
-								characters={characters}
-								type={type}
-								setType={setType}
-								setSearchTerm={setSearchTerm}
-								info={info}
-								fetchNextPage={fetchNextPage}
-								fetchPreviousPage={fetchPreviousPage}
-							/>
-						}
-					/>
-					<Route path="*" element={<ErrorPage />} />
-				</Routes>
-				<Pagination info={info} fetchNextPage={fetchNextPage} fetchPreviousPage={fetchPreviousPage} />
-				<Footer />
-			</BrowserRouter>
+			<Navbar />
+			<Homepage
+				characters={characters}
+				type={type}
+				setType={setType}
+				setSearchTerm={setSearchTerm}
+				info={info}
+				fetchNextPage={fetchNextPage}
+				fetchPreviousPage={fetchPreviousPage}
+			/>
+			<Pagination info={info} fetchNextPage={fetchNextPage} fetchPreviousPage={fetchPreviousPage} />
+			<Footer />
 		</>
 	);
 };

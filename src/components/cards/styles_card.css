@@ -75,11 +75,14 @@
 	position: absolute;
 	left: 150px;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .more-info h1 {
 	color: #fff;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .card.green .additional .more-info h1 {
@@ -87,14 +90,16 @@
 }
 
 .coords {
-	margin: 3%;
 	color: #fff;
 	font-size: 1rem;
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: flex-start;
-	align-content: space-around;
+	margin-left: 2rem;
+}
+
+.coords p {
+	margin: 0;
 }
 
 .location {
@@ -105,17 +110,9 @@
 	color: #325c46;
 }
 
-.coords span {
-	margin: 0.2%;
-}
-
 .stats {
 	font-size: 2rem;
 	display: flex;
-	position: absolute;
-	bottom: 1rem;
-	right: 1rem;
-	top: auto;
 	color: #fff;
 }
 
@@ -164,9 +161,12 @@
 	margin: 20% 0 20% 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
 	.card .general {
 		max-width: 45%;
+	}
+	.general{
+		right: 10%;
 	}
 	.card h1 {
 		font-size: 15px;
@@ -179,7 +179,8 @@
 	}
 	.coords {
 		font-size: 12px;
-		margin-top: 20%;
+		margin-left: 0;
+		align-items: center;
 	}
 	.additional {
 		width: 0;

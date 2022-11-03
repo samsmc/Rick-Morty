@@ -17,10 +17,10 @@ export default function Card({ character }) {
 				<div className="more-info">
 					<h1>{character.name}</h1>
 					<div className="coords">
-						<span>Last known location:</span>
-						<span className="location">{character.location.name}</span>
-						<span>First seen in: </span>
-						<span className="location">{character.origin.name}</span>
+						<p>Last known location:</p>
+						<p className="location">{character.location.name}</p>
+						<p>First seen in: </p>
+						<p className="location">{character.origin.name}</p>
 					</div>
 					<div className="stats">
 						<div>

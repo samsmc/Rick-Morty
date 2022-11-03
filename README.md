@@ -43,10 +43,10 @@ In the project directory, you can run:
 
 ### Github
 URL for the project repo and deploy
-[Ricky & Morty TC](https://github.com/samsmc/Rick-Morty).
+[Ricky & Morty TC](https://github.com/samsmc/Rick-Morty)
 
 ### Hosted
-Github Page
+[Rick and Morty website](https://samsmc.github.io/Rick-Morty)
 
 ## Backlog    
 - Apply typescript to all project files.

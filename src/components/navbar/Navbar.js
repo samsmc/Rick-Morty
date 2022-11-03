@@ -7,7 +7,7 @@ export default function Navbar() {
 	return (
 		<>
 			<nav className="header-nav">
-				<a className="home-icon" href="/">
+				<a className="home-icon" href="/Rick-Morty">
 					<img src={navbarLogo} alt="rick and morty navbar logo" className="navbarLogo-img" />
 				</a>
 			</nav>

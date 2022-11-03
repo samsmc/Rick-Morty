@@ -45,6 +45,8 @@ export interface Data {
 }
 
 const App = () => {
+	console.log('Welcome to my code!');
+
 	const [characters, setCharacters] = useState<Result[]>([]);
 	const [type, setType] = useState<string>('');
 	const [info, setInfo] = useState<Info>();
@@ -97,7 +99,7 @@ const App = () => {
 				<Navbar />
 				<Routes>
 					<Route
-						path="/"
+						path="/Rick-Morty"
 						element={
 							<Homepage
 								characters={characters}
